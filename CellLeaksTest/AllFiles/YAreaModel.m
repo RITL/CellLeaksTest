@@ -62,6 +62,11 @@
 }
 
 
+-(BOOL)willDealloc
+{
+    return false;
+}
+
 -(NSArray *)areas
 {
     if(_areas == nil)

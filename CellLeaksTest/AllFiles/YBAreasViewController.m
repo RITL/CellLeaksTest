@@ -26,8 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.indicateTitle = @"地区选择";
-    [UINavigationItem setBackButtonOn:self target:self callbackSelector:@selector(back)];
+//    self.indicateTitle = @"地区选择";
+//    [UINavigationItem setBackButtonOn:self target:self callbackSelector:@selector(back)];
+    
+    self.navigationItem.title = @"地区选择";
+    self.navigationItem.leftItemsSupplementBackButton = true;
     
     //添加tableView
     [self.view addSubview:self.tableView];
@@ -39,6 +42,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc
+{
+    NSLog(@"tableView Controller Dealloc");
+}
 
 #pragma mark - <UITableView Delegate>
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -123,7 +130,7 @@
 {
     if(_tableView == nil)
     {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [[UIView alloc]init];

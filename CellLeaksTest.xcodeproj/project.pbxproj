@@ -15,6 +15,18 @@
 		DB14EDB31D3C7102000AB5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14EDB11D3C7102000AB5B8 /* LaunchScreen.storyboard */; };
 		DB14EDBE1D3C7102000AB5B8 /* CellLeaksTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDBD1D3C7102000AB5B8 /* CellLeaksTestTests.m */; };
 		DB14EDC91D3C7102000AB5B8 /* CellLeaksTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDC81D3C7102000AB5B8 /* CellLeaksTestUITests.m */; };
+		DB14EE091D3C7639000AB5B8 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDF41D3C7639000AB5B8 /* NSObject+MemoryLeak.m */; };
+		DB14EE0A1D3C7639000AB5B8 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDF61D3C7639000AB5B8 /* UIApplication+MemoryLeak.m */; };
+		DB14EE0B1D3C7639000AB5B8 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDF81D3C7639000AB5B8 /* UINavigationController+MemoryLeak.m */; };
+		DB14EE0C1D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDFA1D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.m */; };
+		DB14EE0D1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDFC1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.m */; };
+		DB14EE0E1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EDFE1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.m */; };
+		DB14EE0F1D3C7639000AB5B8 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EE001D3C7639000AB5B8 /* UIView+MemoryLeak.m */; };
+		DB14EE101D3C7639000AB5B8 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EE021D3C7639000AB5B8 /* UIViewController+MemoryLeak.m */; };
+		DB14EE111D3C7639000AB5B8 /* YAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EE041D3C7639000AB5B8 /* YAreaModel.m */; };
+		DB14EE121D3C7639000AB5B8 /* YBAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EE061D3C7639000AB5B8 /* YBAreaCell.m */; };
+		DB14EE131D3C7639000AB5B8 /* YBAreasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB14EE081D3C7639000AB5B8 /* YBAreasViewController.m */; };
+		DB14EE151D3C76A9000AB5B8 /* TestImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB14EE141D3C76A9000AB5B8 /* TestImage.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,31 @@
 		DB14EDC41D3C7102000AB5B8 /* CellLeaksTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellLeaksTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB14EDC81D3C7102000AB5B8 /* CellLeaksTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellLeaksTestUITests.m; sourceTree = "<group>"; };
 		DB14EDCA1D3C7102000AB5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB14EDF21D3C7639000AB5B8 /* MLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
+		DB14EDF31D3C7639000AB5B8 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDF41D3C7639000AB5B8 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDF51D3C7639000AB5B8 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDF61D3C7639000AB5B8 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDF71D3C7639000AB5B8 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDF81D3C7639000AB5B8 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDF91D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDFA1D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDFB1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDFC1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDFD1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EDFE1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EDFF1D3C7639000AB5B8 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EE001D3C7639000AB5B8 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EE011D3C7639000AB5B8 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		DB14EE021D3C7639000AB5B8 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		DB14EE031D3C7639000AB5B8 /* YAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAreaModel.h; sourceTree = "<group>"; };
+		DB14EE041D3C7639000AB5B8 /* YAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAreaModel.m; sourceTree = "<group>"; };
+		DB14EE051D3C7639000AB5B8 /* YBAreaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBAreaCell.h; sourceTree = "<group>"; };
+		DB14EE061D3C7639000AB5B8 /* YBAreaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBAreaCell.m; sourceTree = "<group>"; };
+		DB14EE071D3C7639000AB5B8 /* YBAreasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBAreasViewController.h; sourceTree = "<group>"; };
+		DB14EE081D3C7639000AB5B8 /* YBAreasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBAreasViewController.m; sourceTree = "<group>"; };
+		DB14EE141D3C76A9000AB5B8 /* TestImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestImage.xcassets; sourceTree = "<group>"; };
+		DB14EE161D3C7899000AB5B8 /* CellLeaks.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellLeaks.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +138,7 @@
 		DB14EDA21D3C7102000AB5B8 /* CellLeaksTest */ = {
 			isa = PBXGroup;
 			children = (
+				DB14EDF01D3C7639000AB5B8 /* AllFiles */,
 				DB14EDA61D3C7102000AB5B8 /* AppDelegate.h */,
 				DB14EDA71D3C7102000AB5B8 /* AppDelegate.m */,
 				DB14EDA91D3C7102000AB5B8 /* ViewController.h */,
@@ -138,6 +176,46 @@
 				DB14EDCA1D3C7102000AB5B8 /* Info.plist */,
 			);
 			path = CellLeaksTestUITests;
+			sourceTree = "<group>";
+		};
+		DB14EDF01D3C7639000AB5B8 /* AllFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DB14EDF11D3C7639000AB5B8 /* MLeaksFinder */,
+				DB14EE031D3C7639000AB5B8 /* YAreaModel.h */,
+				DB14EE041D3C7639000AB5B8 /* YAreaModel.m */,
+				DB14EE051D3C7639000AB5B8 /* YBAreaCell.h */,
+				DB14EE061D3C7639000AB5B8 /* YBAreaCell.m */,
+				DB14EE071D3C7639000AB5B8 /* YBAreasViewController.h */,
+				DB14EE081D3C7639000AB5B8 /* YBAreasViewController.m */,
+				DB14EE141D3C76A9000AB5B8 /* TestImage.xcassets */,
+				DB14EE161D3C7899000AB5B8 /* CellLeaks.pch */,
+			);
+			path = AllFiles;
+			sourceTree = "<group>";
+		};
+		DB14EDF11D3C7639000AB5B8 /* MLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				DB14EDF21D3C7639000AB5B8 /* MLeaksFinder.h */,
+				DB14EDF31D3C7639000AB5B8 /* NSObject+MemoryLeak.h */,
+				DB14EDF41D3C7639000AB5B8 /* NSObject+MemoryLeak.m */,
+				DB14EDF51D3C7639000AB5B8 /* UIApplication+MemoryLeak.h */,
+				DB14EDF61D3C7639000AB5B8 /* UIApplication+MemoryLeak.m */,
+				DB14EDF71D3C7639000AB5B8 /* UINavigationController+MemoryLeak.h */,
+				DB14EDF81D3C7639000AB5B8 /* UINavigationController+MemoryLeak.m */,
+				DB14EDF91D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.h */,
+				DB14EDFA1D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.m */,
+				DB14EDFB1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.h */,
+				DB14EDFC1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.m */,
+				DB14EDFD1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.h */,
+				DB14EDFE1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.m */,
+				DB14EDFF1D3C7639000AB5B8 /* UIView+MemoryLeak.h */,
+				DB14EE001D3C7639000AB5B8 /* UIView+MemoryLeak.m */,
+				DB14EE011D3C7639000AB5B8 /* UIViewController+MemoryLeak.h */,
+				DB14EE021D3C7639000AB5B8 /* UIViewController+MemoryLeak.m */,
+			);
+			path = MLeaksFinder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB14EDB31D3C7102000AB5B8 /* LaunchScreen.storyboard in Resources */,
+				DB14EE151D3C76A9000AB5B8 /* TestImage.xcassets in Resources */,
 				DB14EDB01D3C7102000AB5B8 /* Assets.xcassets in Resources */,
 				DB14EDAE1D3C7102000AB5B8 /* Main.storyboard in Resources */,
 			);
@@ -270,9 +349,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB14EE0F1D3C7639000AB5B8 /* UIView+MemoryLeak.m in Sources */,
 				DB14EDAB1D3C7102000AB5B8 /* ViewController.m in Sources */,
+				DB14EE0E1D3C7639000AB5B8 /* UITabBarController+MemoryLeak.m in Sources */,
+				DB14EE101D3C7639000AB5B8 /* UIViewController+MemoryLeak.m in Sources */,
+				DB14EE131D3C7639000AB5B8 /* YBAreasViewController.m in Sources */,
+				DB14EE091D3C7639000AB5B8 /* NSObject+MemoryLeak.m in Sources */,
+				DB14EE121D3C7639000AB5B8 /* YBAreaCell.m in Sources */,
+				DB14EE0C1D3C7639000AB5B8 /* UIPageViewController+MemoryLeak.m in Sources */,
+				DB14EE111D3C7639000AB5B8 /* YAreaModel.m in Sources */,
+				DB14EE0D1D3C7639000AB5B8 /* UISplitViewController+MemoryLeak.m in Sources */,
 				DB14EDA81D3C7102000AB5B8 /* AppDelegate.m in Sources */,
 				DB14EDA51D3C7102000AB5B8 /* main.m in Sources */,
+				DB14EE0A1D3C7639000AB5B8 /* UIApplication+MemoryLeak.m in Sources */,
+				DB14EE0B1D3C7639000AB5B8 /* UINavigationController+MemoryLeak.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CellLeaksTest/AllFiles/CellLeaks.pch;
 				INFOPLIST_FILE = CellLeaksTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.CellLeaksTest;
@@ -424,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CellLeaksTest/AllFiles/CellLeaks.pch;
 				INFOPLIST_FILE = CellLeaksTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.CellLeaksTest;

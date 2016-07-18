@@ -6,7 +6,7 @@
 //  Copyright © 2016年 wangpj. All rights reserved.
 //
 
-#import "CB_BaseViewController.h"
+#import <UIKit/UIKit.h>
 
 
 @class YAreaModel;
@@ -23,7 +23,7 @@ typedef void(^YBAreaDidChooseBlock)(YAreaModel * area);
 /**
  *  平安校车-选择地区的控制器
  */
-NS_CLASS_AVAILABLE_IOS(7_0) @interface YBAreasViewController : CB_BaseViewController
+NS_CLASS_AVAILABLE_IOS(7_0) @interface YBAreasViewController : UIViewController
 
 
 

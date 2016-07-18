@@ -50,7 +50,7 @@
  */
 - (void)loadYBAreaCell
 {
-    [self addSubview:self.chooseImageView];
+    [self.contentView addSubview:self.chooseImageView];
     
     //开始布局
     [self startAutoLayoutViews];
@@ -69,7 +69,7 @@
         _chooseImageView = [[UIImageView alloc]init];
         _chooseImageView.translatesAutoresizingMaskIntoConstraints = false;
         //YBDeselect dechoose
-        _chooseImageView.image = [UIImage imageFileNamed:@"YBDeselect"];
+        _chooseImageView.image = [UIImage imageNamed:@"YBDeselect"];
     }
     
     return _chooseImageView;
@@ -85,16 +85,16 @@
 {
     //水平
     NSArray * hor1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[_chooseImageView(20)]-5-|" options:NSLayoutFormatDirectionLeadingToTrailing metrics:nil views:NSDictionaryOfVariableBindings(_chooseImageView)];
-    [self addConstraints:hor1];
+    [self.contentView addConstraints:hor1];
     
     //垂直
     NSArray * ver1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_chooseImageView(20)]" options:NSLayoutFormatDirectionLeadingToTrailing metrics:nil views:NSDictionaryOfVariableBindings(_chooseImageView)];
     
     //进行垂直居中
-    NSLayoutConstraint * center = [NSLayoutConstraint constraintWithItem:_chooseImageView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
+    NSLayoutConstraint * center = [NSLayoutConstraint constraintWithItem:_chooseImageView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
     
-    [self addConstraints:ver1];
-    [self addConstraint:center];
+    [self.contentView addConstraints:ver1];
+    [self.contentView addConstraint:center];
 }
 
 
@@ -102,24 +102,20 @@
 -(void)showChooseSignImage
 {
     //YBSelect didChoose
-    self.chooseImageView.image = [UIImage imageFileNamed:@"YBSelect"];
+    self.chooseImageView.image = [UIImage imageNamed:@"YBSelect"];
 }
 
 -(void)showNormalSignImage
 {
     //YBDeselect dechoose
-    self.chooseImageView.image = [UIImage imageFileNamed:@"YBDeselect"];
+    self.chooseImageView.image = [UIImage imageNamed:@"YBDeselect"];
 }
-
 -(void)dealloc
 {
     NSLog(@"areaCell dealloc");
 }
 
-//-(BOOL)willDealloc
-//{
-//    return false;
-//}
+
 
 @end
 
